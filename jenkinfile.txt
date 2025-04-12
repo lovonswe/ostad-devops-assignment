@@ -1,0 +1,20 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('Clone Git Repository') {
+            steps {
+                git branch: 'master', url: 'https://github.com/lovonswe/ostad-devops-assignment.git'
+            }
+        }
+
+        stage('Read and Output hello.txt') {
+            steps {
+                script {
+                    def helloContent = readFile 'hello.txt'
+                    echo "Content of hello.txt:\n${helloContent}"
+                }
+            }
+        }
+    }
+}

@@ -1,6 +1,4 @@
-Hi welcome to ostad, this is first assignment.
-hiii
-hw
-one more try
-hi
-hi........
+Hi welcome to ostad, this is 2nd assignment.
+I've created a jenkin pipeline using webhook
+Nice Its working
+Thanks to Rafaf vai
